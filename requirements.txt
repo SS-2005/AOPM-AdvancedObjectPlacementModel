@@ -1,0 +1,13 @@
+torch==2.2.0
+torchvision==0.17.0
+torchaudio==2.2.0
+ultralytics==8.0.0  # Replace with the version you used
+opencv-python==4.9.0.80
+matplotlib==3.8.3
+scikit-learn==1.4.1
+rembg==2.0.52
+Pillow==10.2.0
+patool==1.2.3
+pandas==2.2.0
+numpy==1.26.4
+onnxruntime==1.17.0
