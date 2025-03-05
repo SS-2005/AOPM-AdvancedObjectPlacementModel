@@ -4,6 +4,13 @@
 
 This project implements an advanced object placement system that automatically places an object into a background image, using a machine learning model to predict the optimal position for the object. It incorporates realistic effects like shadow creation and alpha blending for seamless integration.
 
+## To run the code:
+1) Add the dataset to your drive (To download dataset use the link `https://drive.google.com/file/d/133Wic_nSqfrIajDnnxwvGzjVti-7Y6PF/view?pli=1`)
+2) Open AOPM.ipynb (Provided)
+3) Enter Object name and image
+4) Obtain the image
+
+   
 ## Features
 
 *   **Background Removal:** Removes the background from the foreground object using the `rembg` library.
