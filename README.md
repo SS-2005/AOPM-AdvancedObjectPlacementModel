@@ -7,6 +7,10 @@ It will take input from user such as object name and the image and will automati
 
 # Working:-
 ## To run the `APOM Code`:
+Video Demonstration: 
+* https://screenrec.com/share/0iCj9ugkl7
+* https://drive.google.com/file/d/1adUxymj7IyYHxvMeCB7gBY3nN5Vy63d0/view?usp=drive_link
+  
 1) Add the dataset to your drive (To download dataset use the link `https://drive.google.com/file/d/133Wic_nSqfrIajDnnxwvGzjVti-7Y6PF/view?pli=1`)
 2) Open AOPM.ipynb (link- https://colab.research.google.com/drive/1CxlxtynRcnJyfjDlZ290k2REt9sb80tL?usp=drive_link)
 3) Run all the blocks sequentially.
@@ -80,7 +84,7 @@ It will take input from user such as object name and the image and will automati
     *   Prompt you to upload an image.
     *   Place the uploaded image into a randomly selected background using the trained model.
     *   Display the result.
-    *   
+      
 2.  **Enter Object Name:** Enter the object name that you want to place
 3.  **Upload Image:**  The script will use `files.upload()` (from `google.colab`) to allow you to upload a object image.
 4.  **View Result:** The script will display the final image with the object placed in the background.
