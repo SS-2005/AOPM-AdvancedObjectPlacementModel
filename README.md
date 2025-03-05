@@ -18,7 +18,7 @@ Video Demonstration:
 2) Open AOPM.ipynb (link- https://colab.research.google.com/drive/1CxlxtynRcnJyfjDlZ290k2REt9sb80tL?usp=drive_link)
 3) Run all the blocks sequentially.
 4) Grant Permission to access your drive (The dataset is about `4.4 GB` loading it manually in colab totally impractically)
-5) Enter Object name and image.
+5) Enter Object name and image(View the dataset background Folder,Enter anyobject name from it & can upload any image of that folder)
 6) Result will be displayed on the screen.
 
 
