@@ -148,5 +148,5 @@ Current version of code does not load the entire dataset thus the image placemen
 
    
 ## Author:
-Name: Sahil Shaikh
-Email: sahil.shaikh24@aiml.sce.edu.in
+* Name: Sahil Shaikh
+* Email: sahil.shaikh24@aiml.sce.edu.in
