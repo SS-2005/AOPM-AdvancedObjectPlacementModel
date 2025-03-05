@@ -1,17 +1,21 @@
-# Advanced Object Placement in Images
+# APOM-Advanced Object Placement Model in Images
 
-## Overview
+## Overview:-
 
 This project implements an advanced object placement system that automatically places an object into a background image, using a machine learning model to predict the optimal position for the object. It incorporates realistic effects like shadow creation and alpha blending for seamless integration.
+It will take input from user such as object name and the image and will automatically place it into a image within seconds 
 
-## To run the code:
+# Working:-
+## To run the `APOM Code`:
 1) Add the dataset to your drive (To download dataset use the link `https://drive.google.com/file/d/133Wic_nSqfrIajDnnxwvGzjVti-7Y6PF/view?pli=1`)
-2) Open AOPM.ipynb (Provided)
-3) Enter Object name and image
-4) Obtain the image
+2) Open AOPM.ipynb (link- https://colab.research.google.com/drive/1CxlxtynRcnJyfjDlZ290k2REt9sb80tL?usp=drive_link)
+3) Run all the blocks sequentially.
+4) Grant Permission to access your drive (The dataset is about `4.4 GB` loading it manually in colab totally impractically)
+5) Enter Object name and image.
+6) Result will be displayed on the screen.
 
    
-## Features
+## Features of APOM
 
 *   **Background Removal:** Removes the background from the foreground object using the `rembg` library.
 *   **Object Placement Prediction:**  Employs a convolutional neural network (CNN) to predict the ideal position (x, y coordinates and width, height) for the object within the background.
@@ -24,36 +28,10 @@ This project implements an advanced object placement system that automatically p
 *   Python 3.6+
 *   Libraries listed in `requirements.txt`.
 
-## Installation
-
-1.  Clone the repository:
-
-    ```
-    git clone <repository_url>
-    cd <repository_directory>
-    ```
-
-2.  Create a virtual environment (recommended):
-
-    ```
-    python -m venv venv
-    source venv/bin/activate  # On Linux/macOS
-    venv\Scripts\activate  # On Windows
-    ```
-
-3.  Install the dependencies:
-
-    ```
-    pip install -r requirements.txt
-    ```
 
 ## Steps:-
-## Data Preparation
-
+## Data Preparation:-
 1.  **Dataset:** The code expects a dataset with the following structure:
-   To download dataset use the link `https://drive.google.com/file/d/133Wic_nSqfrIajDnnxwvGzjVti-7Y6PF/view?pli=1`
-   <br>Use this link to download the dataset its structure is has followed
-
     ```
     opa_dataset/
     ├── new_OPA/
@@ -72,11 +50,12 @@ This project implements an advanced object placement system that automatically p
     │   ├── train_set.csv
     │   └── test_set.csv
     ```
-
     *   `background/`: Contains background images organized into categories.
     *   `composite/`: Contains composite images (foreground object placed on a background).
     *   `train_set.csv`: CSV file containing training data (image name and object position).
     *   `test_set.csv`: CSV file containing testing data (image name and object position).
+    *   To download dataset use the link `https://drive.google.com/file/d/133Wic_nSqfrIajDnnxwvGzjVti-7Y6PF/view?pli=1`
+   <br>Use this link to download the dataset or add its shortcut to your drive
 
 3.  **CSV Format:** The `train_set.csv` and `test_set.csv` files should have the following columns:
 
@@ -84,17 +63,16 @@ This project implements an advanced object placement system that automatically p
     *   `position`: A string representing a list of four numbers (x, y, width, height) that define the object's bounding box in the image.  For example: `"[100, 50, 200, 150]"`.
 
 4.  **Mount Google Drive:**  If running in Google Colab, mount your Google Drive to access the dataset:
-
     ```
     from google.colab import drive
     drive.mount('/content/drive')
     ```
-
     Make sure to place the `opa_dataset.rar` file in your Google Drive and update the `rar_path` variable accordingly.
+
 
 ## Usage
 
-1.  **Run the Code:** Execute the Python script (e.g., in Google Colab).  The script will:
+1.  **Run the Code:** Execute the Python APOM script (e.g., in Google Colab).  The script will:
 
     *   Install necessary libraries.
     *   Load and preprocess the dataset.
@@ -102,10 +80,10 @@ This project implements an advanced object placement system that automatically p
     *   Prompt you to upload an image.
     *   Place the uploaded image into a randomly selected background using the trained model.
     *   Display the result.
-
-2.  **Upload Image:**  The script will use `files.upload()` (from `google.colab`) to allow you to upload a foreground object image.
-
-3.  **View Result:** The script will display the final image with the object placed in the background.
+    *   
+2.  **Enter Object Name:** Enter the object name that you want to place
+3.  **Upload Image:**  The script will use `files.upload()` (from `google.colab`) to allow you to upload a object image.
+4.  **View Result:** The script will display the final image with the object placed in the background.
 
 ## Code Explanation
 
@@ -136,11 +114,9 @@ This project implements an advanced object placement system that automatically p
     *   Displays the final result using `matplotlib`.
 
 ## Model Saving
-
 The trained model is saved as `placement_model.pth`.
 
-For simpler understanding i have made a single code file
-
+For simpler understanding i have made a single code file i.e APOM
 ## Future Scope:
 * Increase Accuracy
 * Logically related background
@@ -150,4 +126,27 @@ For simpler understanding i have made a single code file
 
   
 ## `NOTE`: 
-Current version of code does not load the entire dataset thus the image placements are affected, For Higher Accuracy use the entire dataset and increase the value of `NUM_EPOCH` for training.
+Current version of code does not load the entire dataset thus the image placements maybe affected, For Higher Accuracy use the entire dataset and increase the value of `NUM_EPOCH` for training and increase the `Sample_Training_Set Number`.
+
+## Installation (Optional)
+1.  Clone the repository:
+
+    ```
+    git clone <repository_url>
+    cd <repository_directory>
+    ```
+2.  Create a virtual environment (recommended):
+    ```
+    python -m venv venv
+    source venv/bin/activate  # On Linux/macOS
+    venv\Scripts\activate  # On Windows
+    ```
+3.  Install the dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+
+   
+## Author:
+Name: Sahil Shaikh
+Email: sahil.shaikh24@aiml.sce.edu.in
