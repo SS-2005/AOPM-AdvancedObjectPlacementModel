@@ -194,3 +194,5 @@ Current version of code does not load the entire dataset thus the image placemen
 ## Author:
 * Name: Sahil Shaikh
 * Email: sahil.shaikh24@aiml.sce.edu.in
+
+https://medium.com/@SS-2005/apoject-placement-model-in-images-384441c13bcd?sharedUserId=SS-2005
